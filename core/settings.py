@@ -158,9 +158,9 @@ CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
 
-# CORS_ALLOWED_ORIGINS = [
-#     "http://localhost:5173"
-# ]
+CORS_ALLOWED_ORIGINS = [
+     "https://vocal-capybara-eb36a8.netlify.app"
+ ]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
