@@ -1,0 +1,17 @@
+django
+djangorestframework
+psycopg2-binary
+django-cors-headers
+python-dotenv
+openai
+google-search-results
+djangorestframework-oauth
+djangorestframework-simplejwt
+djangorestframework-simplejwt[crypto]
+scikit-learn==1.3.2
+django-rest-passwordreset
+# django-allauth==64.0.0
+django-allauth==0.61.1
+dj-rest-auth
+mercadopago
+whitenoise
