@@ -4,7 +4,7 @@ services:
     env: docker
     plan: free
     buildCommand: ""
-    startCommand: "gunicorn core.wsgi:application --bind 0.0.0.0:8000"
+    startCommand: "./render-build.sh"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
