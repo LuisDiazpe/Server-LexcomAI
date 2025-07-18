@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: server-lexcomai
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements/requirements.txt
+      python manage.py migrate
+    startCommand: gunicorn core.wsgi:application
+    autoDeploy: true
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: core.settings
+      - key: DATABASE_URL
+        fromDatabase:
+          name: lexcom-postgres
+          property: connectionString
